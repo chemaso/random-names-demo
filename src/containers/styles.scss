@@ -1,0 +1,36 @@
+@import '../globals.scss';
+
+.users-container {
+  width: 95vw;
+
+  .title {
+    background: linear-gradient(-45deg, $primary, $secondary, $blue);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .customs-container {
+    width: 90vw;
+    margin: 20px;
+
+    .customs-filtering {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-flow: row wrap;
+
+      .customs-input-filter {
+        margin-right: 30px;
+        flex: "0 0 60%",
+      }
+    }
+  }
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

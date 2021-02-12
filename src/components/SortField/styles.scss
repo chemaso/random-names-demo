@@ -1,0 +1,48 @@
+@import '../../globals.scss';
+
+.sort-field-container {
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+
+  .sort-field-title {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $gray;
+    margin-bottom: 10px;
+  }
+
+.btn-group {
+  margin-left: 10px;
+  .button {
+    box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.59);
+    background-color: $blue;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    color: $white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    &.selected {
+      background: $primary;
+  }
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+}
+
+}
